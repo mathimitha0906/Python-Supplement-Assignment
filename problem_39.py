@@ -3,5 +3,8 @@
 
 dict1 = {"a": 1, "b": 2}
 dict2 = {"c": 3, "d": 4}
-merged = dict1 + dict2
+
+merged = dict1.copy()  # make a copy so original dict1 not changed
+merged.update(dict2)
+
 print(f"Merged dictionary: {merged}")
